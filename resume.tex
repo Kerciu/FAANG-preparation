@@ -1,0 +1,99 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Kacper Górski} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+48 665 562 654 \\ kacper.gorski.contact@gmail.com \\ Warsaw, Poland} 
+\address{
+\href{https://kerciu.github.io/}{https://kerciu.github.io/} \\
+\href{https://linkedin.com/in/kacper-gorski-se}{https://linkedin.com/in/kacper-gorski-se} \\
+\href{https://github.com/Kerciu}{https://github.com/Kerciu}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\textbf{Warsaw University of Technology}, Warsaw, Poland \hfill \textit{Oct 2023 -- Feb 2027} \\
+\textit{Bachelor of Engineering in Computer Science} \\
+\textit{Minor:} Artificial Intelligence \\
+Relevant coursework: Data Structures \& Algorithms, Operating Systems, Databases, Computer Architecture, Object-Oriented Programming, Application Programming, Introduction to AI, Software Craftsmanship
+
+% \textbf{Technische Universität Berlin}, Berlin, Germany \hfill \textit{Mar 2026 -- Jul 2026} \\
+% \textit{Erasmus Exchange} \\
+% Planned Erasmus Exchange for spring semester – nomination confirmed.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Ringier Axel Springer Poland}, Warsaw, Poland \hfill \textit{Jul 2025 -- now} \\
+\textit{JavaScript Full-Stack Developer Internship} \\
+Developed and maintained monetization systems for Onet Premium, used by over 18M monthly users.
+Delivered scalable features using TypeScript, NestJS, Node.js, and AWS (Lambda, EC2, S3), integrated with Piano webhooks. Implemented Piano Template designs based on Figma mockups using HTML and CSS. Collaborated in an Agile team, ensuring weekly sprint deliveries in Jira and maintaining code quality via CI/CD pipelines.
+\end{itemize}
+
+\end{rSection} 
+
+\begin{rSection}{PROJECT EXPERIENCE}
+\vspace{-1.25em}
+
+\item \textbf{\href{https://github.com/Kerciu/csv-translation-tool} {Semi-automatic CSV File Translation Tool}} {(Typescript, Django, Rust, MongoDB, Docker, Redis)}\\  
+Led development of a full-stack web application for translating CSV files with AI. Responsible for building the frontend in React/Next.js with Tailwind and shadcn/ui, implementing a high-performance ML translation module in Rust using Hugging Face MarianMT, and managing Docker-based deployment and CI/CD pipelines. The app enables CSV parsing with row and column selection, translation progress saving in MongoDB, and Redis-based caching. The project emphasizes UX, modularity, and performance.
+
+% \item \textbf{\href{https://github.com/Kerciu/kzip}{Multithreaded File Compression CLI Tool}} {(Pure Rust)}\\
+% Developed a high-performance file compression tool from scratch using Rust, focusing on multithreading and advanced compression algorithms (LZ77, Huffman). Achieved significant performance improvements compared to traditional compression tools by optimizing I/O operations and memory usage.
+
+% \item \textbf{\href{https://github.com/Kerciu/expense-tracker-java}{Distributed Patient Management System}} {(Spring Boot, React, Docker, Kafka, gRPC, AWS CloudFormation)}\\
+% Designed and implemented a distributed microservices system for managing patient data. Developed core backend services (Patient, Billing, Auth, Analytics), implemented inter-service communication using gRPC and Kafka, secured the APIs with JWT, and built the frontend in React. The entire system was containerized with Docker and deployed in a cloud-like environment using AWS CloudFormation and LocalStack.
+
+\item \textbf{\href{https://github.com/Kerciu/book-management-app}{Book Collection Management Web Application}} {(Django, Rust, PostgreSQL, Docker, Github Actions)}\\
+Built and documented a scalable backend in Django and PostgreSQL for a Goodreads-style app with features like advanced book filtering, user reviews, ratings and authentication. Integrated REST APIs for seamless data exchange between frontend (Rust-based) and backend as well as full-featured user authentication.
+
+\item \textbf{\href{https://github.com/Kerciu/flashcard-webapp}{Quizlet-like Flashcard Web Application}} {(React, Spring Boot, MySQL, Docker)}\\
+Spearheaded frontend development of a spaced repetition social learning platform. Users can register, create folders and flashcards, and track their study progress. Features include secure authentication, flashcard import/export (PDF, TXT), a spaced repetition scheduler, detailed statistics, and advanced filtering. Deployed in Docker containers for scalability.
+
+\item \textbf {\href{https://github.com/Kerciu/mandelbrot-set-x64-c}{Mandelbrot Set Visualisation}} {(C, x86 Assembly, SDL2)}\\
+Built a hybrid C and x64 Assembly (64-bit x86) program for high-performance Mandelbrot Set rendering with SDL2. Learned low-level optimization, system internals, and how computers execute code.
+
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+
+\textbf{Programming Languages:} C, C++, Python, Java, SQL, JavaScript, TypeScript, Rust \\
+\textbf{Frontend:} React, TailwindCSS, shadcn/ui, HTML, CSS \\
+\textbf{Backend:} Django, Spring Boot, NestJS, Node.js, REST APIs \\
+\textbf{DevOps / Cloud:} AWS (EC2, S3, Lambda), Docker, Github Actions \\
+\textbf{Databases / Tools:} PostgreSQL, MySQL, Redis, MongoDB, Oracle, Git, Jira
+
+\end{rSection} 
+
+\begin{rSection}{LANGUAGES}
+    Polish (Native), English (C2), German (B2), Japanese (N3), French (A1)
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\textcolor[rgb]{0.5,0.5,0.5}{\small I hereby consent to the processing of this CV and the personal data contained within, by anyone who receives this document for the sole purpose of considering my application for employment opportunities.}
+\end{center}
+
+\end{document}
